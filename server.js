@@ -24,7 +24,7 @@ setInterval(() => {
   const notification = generateNotification();
   io.emit("notification", notification);
   console.log("Sent:", notification);
-}, 5000);
+}, 1000);
 
 io.on("connection", (socket) => {
   console.log("✅ A user connected");
